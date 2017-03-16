@@ -14,6 +14,7 @@ Stuff left to implement:
   - embed links/photos/videos (fix permisions first)
   - more special cases for users
   - more user interaction
+  - code modularity
   
 -----
 
