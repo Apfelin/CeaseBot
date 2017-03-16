@@ -1,5 +1,6 @@
 # CeaseBot
 Discord bot for messing with your users
+
 Author: Vlad Pelin
 
 ---
