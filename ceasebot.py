@@ -16,7 +16,7 @@ logging.basicConfig(level=logging.INFO)
 
 ceasebot = Bot(command_prefix="!")
 
-bad_words = ['furry', 'furrie', 'scalie', 'snek', 'trap', 'gay', 'ledgie', 'anime', 'animu']
+bad_words = ['furry', 'furrie', 'scalie', 'snek', 'trap', 'ledgie', 'anime', 'animu']
 states = {15: 'Not-so-calm', 30: 'Angry', 45: 'Jimmies Rustled', 70: 'Mad', 90: 'Very Mad', 120: 'NUKING CHAT'}
 deusbot_commands=['!bodypillow', '!cease', '!edgy', '!end', '!heresy', '!heretic', '!traps', '!weeb', '!wtf', '!kys', '!exterminatus', '!baddog', '!bash', '!ledge']
 current_state = 'Calm'
@@ -69,7 +69,7 @@ async def on_message(message):
                     bad_word_count += 1
                     break
                 elif current_state == 'Mad':
-                    await ceasebot.send_message(message.channel, 'Jesus fucking Christ, no more. ***Stop this at once***')
+                    await ceasebot.send_message(message.channel, 'Jesus Christ, no more. ***Stop this at once***')
                     start_time = int(time.monotonic())
                     bad_word_count += 1
                     break
