@@ -9,9 +9,6 @@ from discord import Emoji
 import os
 import psutil
 
-##bot invite link: https://discordapp.com/oauth2/authorize?client_id=291290722135572483&scope=bot&permissions=19520
-##currently, the bot is hosted locally, so it's only online if it's running on local machine
-
 logging.basicConfig(level=logging.INFO)
 
 ceasebot = Bot(command_prefix="!")
@@ -118,4 +115,4 @@ async def on_message(message):
     if bad_word_count in states:
         current_state = states[bad_word_count]
 
-ceasebot.run('MjkxMjkwNzIyMTM1NTcyNDgz.C6ndNQ.KUgdX7U_rb7NPMJS7R_OChidhTE')
+ceasebot.run(TOKEN)
